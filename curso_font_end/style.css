@@ -14,12 +14,13 @@ body{
 }
 
 .imagem_titulo{
-    width: 90%;
+    width: 50%;
     height: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
+    border: 20px groove #a02525;
 }
 h2{
     text-align: center;
