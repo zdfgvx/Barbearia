@@ -1,0 +1,90 @@
+header{
+    background: rgb(175, 174, 174);
+    padding: 20px 0;
+    border-radius: 0px 0px 50px 50px;
+    
+}
+.caixa{
+    
+    position: relative;
+     width: 940px;
+     margin: 0 auto; 
+     
+     
+}
+nav{
+    position: absolute;
+    top:102.17px;
+    right: 70px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0 0 5px;
+    
+}
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+}
+nav a:hover{
+    color: #c76d19;
+    font-style:initial;
+}
+.rodape{
+
+    background:url("imagens/rodapeBarbearia\ .png");
+    height: 300px;
+    width: 100%;
+    
+    padding-top: 180px;
+}
+.rodape p{
+    position: relative;
+    color: white;
+    text-align: center;
+    
+}
+.imagem-rodape{
+    width: 13%;
+    padding: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.input-padram{
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    box-shadow: 3px 3px 4px #a3a3a3 ;
+}
+.checkbox {
+    margin: 25px 0;
+}
+
+.bt-enviar{
+   width: 50%;
+}
