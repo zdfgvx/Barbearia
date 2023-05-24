@@ -1,3 +1,6 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 header{
     background: rgb(175, 174, 174);
     padding: 20px 0;
@@ -27,7 +30,7 @@ nav a{
     font-weight: bold;
     text-decoration: none;
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
       
 }
 nav a:hover{
@@ -68,7 +71,6 @@ form label, form p{
     display: block;
     font-size: 20px;
     margin: 10px 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 .input-padram{
@@ -85,6 +87,36 @@ form label, form p{
     margin: 25px 0;
 }
 
-.bt-enviar{
+#bt-enviar{
    width: 50%;
+   border: none;
+   padding: 15px 0 ;
+   background: orange;
+   border-radius: 15px;
+   transition: 1s all;
+   box-shadow: 3px 3px 4px #a3a3a3;
+}
+
+#bt-enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+}
+table{
+    margin: 20px 0;
+    border: solid black 2px;
+    width: 25%;
+    height: 25%;
+}
+thead{
+    background: #302f2f;
+    color: white;
+}
+th{
+    padding: 5px 6px;
+}
+td{
+    border: solid black 2px;
+    margin: 20px 0;
+    padding: 5px 6px;
+
 }

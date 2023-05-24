@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 header{
     background: rgb(175, 174, 174);
     padding: 20px 0;
