@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <title>laminas divinas Podutos</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="contatos.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/logoBarbearia .png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
     <body>
         <header>
             <div class="caixa">
-                <h1><img src="imagens/logoBarbearia .png" width="25%"></h1>
+                <h1><img src="imagens/logoBarbearia .png" alt="Logo da barbearia" width="25%"></h1>
                 <nav>
                     <ul>
                         <li><a href="home.html">Home</a></li>
@@ -36,57 +35,56 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea  id="mansagem" cols="50" rows="10" class="input-padram"></textarea>
                 
-                <div>
-                    <p>Como prefere o nosso contato?</p>
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
                     <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
                     <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
                     <label for="radio-Whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-Whatsapp"> whatsapp</label>
-                </div>
+                </fieldset>
 
-                <div>
-                    <p>Qual horario prefere o nosso atendimanto?</p>
+                <fieldset>
+                    <legend>Qual horario prefere o nosso atendimanto?</legend>
                     <select>
                         <option>Manhã</option>
                         <option>Tarde</option>
                         <option>Noite</option>
                     </select>
-                </div>
+                </fieldset>
                 
                 <label><input type="checkbox" class="checkbox">Gostaria de receber nossas notificações?</label>
 
 
-                <input type="submit" value="Enviar formulario" id="bt-enviar">
-
+                <input type="submit" value="Enviar formulario" class="Enviar">
+                
                 <table>
                     <thead>
-                        <th>dia</th>
-                        <th>Horario</th>
+                        <tr>
+                            <th>Dias</th>
+                            <th>horarios</th>
+                        </tr>
                     </thead>
-                   <tfoot>
-                        <tbody>
-                            <td>segonda</td>
+                    <tboody>
+                        <tr>
+                            <td>segunda</td>
                             <td>8h ~ 20h</td>
-                        </tbody>
-                        <tbody>
-                                
+                        </tr>
+                        <tr>
                             <td>Quarta</td>
                             <td>8h ~ 20h</td>
-                        </tbody>
-                        <tbody>
-                                
-                            <td>terça</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
                             <td>8h ~ 20h</td>
-                        </tbody>
-                   </tfoot> 
+                        </tr>
+                    </tboody>
                     
                 </table>
-                
             </form>
             
         </main>
 
         <footer class="rodape">
-            <img src="imagens/logoBarbeariaBranco.png"  class="imagem-rodape">
+            <img src="imagens/logoBarbeariaBranco.png" alt="Logo da Barbearia Branco" class="imagem-rodape">
            <p>&copy; Copyrigt Laminas Divinas Barbearia - 2023</p>
         </footer>
     </body>
