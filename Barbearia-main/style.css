@@ -1,0 +1,256 @@
+body{
+    font-family: 'Popins', sans-serif;
+    background:#0e0e0e ;
+}
+header {
+    display: flex;
+    justify-content: flex-end; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 50px; /* Defina a altura do header */
+}
+
+nav{
+    font-family: 'Popins', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+nav li{
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+nav a{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color:aliceblue;
+    text-decoration: none;
+    transition: 0.3s all;
+    display: inline-block;
+}
+nav a:hover{
+    
+    transform: scale(1.1);
+}
+
+/* css dos Produtos */
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0 ;   
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.25%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px solid black;
+    border-radius: 50px;
+}
+.produtos h2{
+    font-weight:bold;
+    font-size: 22px;
+}
+.produtos-descricao{
+    font-size: 18px;
+}
+.produtos-preco{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 15px;
+}
+.produtos li:hover{
+    border-color: #c76d19;
+    box-shadow: 2px 2px 4px black;
+}
+.produtos li:active{
+    border-color: #444444;
+}
+.produtos li:hover h2{
+    font-size: 25px;
+
+}
+
+/*css do rodape*/
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#08070b;
+    height: 300px;
+    width: 100%;
+}
+.rodape p{
+    position: relative;
+    color: white;
+    text-align: center;
+    
+}
+
+form{
+    margin: 40px 0;
+}
+
+/*css dos contatos */
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 10px ;
+    margin-left:25%;
+
+}
+.input-padram{
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    box-shadow: 3px 3px 4px #a3a3a3 ;
+    margin: 0 auto;
+}
+
+fieldset select{
+
+    margin-left:25%;
+}
+.checkbox {
+    margin: 25px 0;
+}
+
+.Enviar{
+    width: 25%;
+    padding: 15px 22px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;    
+    background-color: orange;
+    box-shadow: 3px 3px 4px #a3a3a3;
+    color: white;
+    transition: 1s all;
+    cursor: pointer;
+    margin-left: 25%;
+}
+.Enviar:hover{
+    background: darkorange;
+    box-shadow: 3px 3px 4px #6e6d6d;
+    transform: scale(1.05) ;
+
+
+
+}
+table{
+    margin: 20px 25px 20px 25% ;
+    width: 25%;
+    
+}
+thead{
+    background-color: rgb(88, 88, 88);
+    color: white;
+    font-weight: bold;
+    margin-left: 25%;
+}
+th, td{
+    padding: 6px 10px;
+    border: solid black 2px;
+}
+
+/*css da pagina inicioal*/
+.titulo-princioal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: right;
+    color: rgba(255, 176, 39, 0.963);
+}
+.sobre_a_barbearia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 3em 0;
+    width: 100%;
+    height: 60vh;
+}
+.sobre_a_barbearia div{
+    max-width: 40%;
+    margin-left: 100px;
+}
+.utencilios{
+    height: auto;
+    width: 40%;
+    margin-right: 70px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.7));   
+}
+
+.sobre_a_barbearia p{
+    margin: 0 0 2em;
+    color: aliceblue;
+}
+
+.sobre_a_barbearia b {
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.sobre_a_barbearia i{
+    font-style: italic;
+    color: aliceblue;
+}
+
+
+.localização p{
+    margin: 0 0 1em;
+}
+.mapa{
+    padding: 60px 0;
+    text-align: center;
+    background: #08070b;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.mapa p {
+    margin: 0 0 3em;
+    color: aliceblue;
+}
+
+.Beneficios{
+    padding: 3em 0;
+    background-color: #08070b;
+}
+.conteudo-beneficio{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-beneficio{
+    display: inline-block;
+    width: 40%;
+    vertical-align:top;
+    list-style-type:"\★";
+}
+.item{
+    line-height: 1.25em;
+    color: aliceblue;
+}
+.item:nth-child(1){
+    font-weight: bold;
+
+}
+.conteudo-beneficio img{
+    width: 60%;
+}
+.video{
+    width: 560px;
+    margin: 3em auto;
+}
