@@ -1,40 +1,36 @@
-/* css do cabeçalho*/
 body{
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Popins', sans-serif;
+    background:#0e0e0e ;
 }
-header{
-    background: rgb(167, 167, 167);
-    padding: 20px 0;
+header {
+    display: flex;
+    justify-content: flex-end; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 50px; /* Defina a altura do header */
 }
-.caixa{
-    
-    position: relative;
-     width: 940px;
-     margin: 0 auto; 
-     
-     
-}
+
 nav{
-    position: absolute;
-    top:102.17px;
-    right: 70px;
+    font-family: 'Popins', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 20px;
 }
 nav li{
     display: inline-block;
-    margin: 0 0 0 5px;
-    
+    margin-right: 0.5rem;
 }
 nav a{
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color:aliceblue;
     text-decoration: none;
-    color: black;
-      
+    transition: 0.3s all;
+    display: inline-block;
 }
 nav a:hover{
-    color: #c76d19;
-    font-style:initial;
+    
+    transform: scale(1.1);
 }
 
 /* css dos Produtos */
@@ -82,8 +78,10 @@ nav a:hover{
 /*css do rodape*/
 
 .rodape{
-
-    background:url("imagens/rodapeBarbearia\ .png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#08070b;
     height: 300px;
     width: 100%;
 }
@@ -92,13 +90,6 @@ nav a:hover{
     color: white;
     text-align: center;
     
-}
-.imagem-rodape{
-    width: 13%;
-    padding: 5px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 form{
@@ -173,60 +164,70 @@ th, td{
 }
 
 /*css da pagina inicioal*/
-
-.baner{
-    width: 100%;
-    height: 600px;
-}
 .titulo-princioal{
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
-    clear: left;
+    clear: right;
+    color: rgba(255, 176, 39, 0.963);
 }
 .sobre_a_barbearia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     padding: 3em 0;
-    width: 940px;
-    margin: 0 auto;
-    background-color: #FEFEFE;
+    width: 100%;
+    height: 60vh;
+}
+.sobre_a_barbearia div{
+    max-width: 40%;
+    margin-left: 100px;
+}
+.utencilios{
+    height: auto;
+    width: 40%;
+    margin-right: 70px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.7));   
 }
 
 .sobre_a_barbearia p{
     margin: 0 0 2em;
+    color: aliceblue;
 }
 
 .sobre_a_barbearia b {
     font-weight: bold;
+    color: aliceblue;
 }
 
 .sobre_a_barbearia i{
     font-style: italic;
+    color: aliceblue;
 }
-.utencilios{
-    width: 20%;
-    float: left;
-    margin: 0 20px 20px 0;
-}
+
 
 .localização p{
     margin: 0 0 1em;
 }
 .mapa{
-    padding: 20px 0;
+    padding: 60px 0;
     text-align: center;
-    background: linear-gradient(#FEFEFE ,#888888);
+    background: #08070b;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 .mapa-conteudo{
     width: 940px;
     margin: 0 auto;
 }
 .mapa p {
-    margin: 0 0 3em
+    margin: 0 0 3em;
+    color: aliceblue;
 }
 
 .Beneficios{
     padding: 3em 0;
-    background-color: #888888;
+    background-color: #08070b;
 }
 .conteudo-beneficio{
     width: 640px;
@@ -240,6 +241,7 @@ th, td{
 }
 .item{
     line-height: 1.25em;
+    color: aliceblue;
 }
 .item:nth-child(1){
     font-weight: bold;
