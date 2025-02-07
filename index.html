@@ -9,23 +9,45 @@
 </head>
 <body>
     <header>
-        <nav>
+        
+        <nav class="nav-principal">
             <ul>
-                <li><a href="teste.html">Home</li></a>
-                <li><a href="produtos.html">Produtos</li></a>
-                <li><a href="contatos.html">Contatos</li></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
             </ul>
         </nav>
+        <div class="botao-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="ativar()" color="#c76d19" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </div>
+        
+        <div class="menu-mobile" id="menu" >
+            <div class="botao-fexar">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="desativar()" color="#c76d19" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+            </div>
+
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
     <main>
+        
         <section class="sobre_a_barbearia">
             <div>
-                <h2 class="titulo-princioal">Sobre a barbearia</h2>
-                <p>Venha para a nossa barbearia Lâminas Divinas e sinta-se bem como nunca! Em um ambiente moderno e acolhedor,
-                    nossos barbeiros experientes estão prontos para deixar você com um corte de cabelo e barba impecáveis.
-                    Agende seu horário e prepare-se para uma experiência única e de qualidade!</p>    
+                <h2 class="titulo-princioal"  onclick="ativar()">Sobre Nós</h2>
+                <p>A Barbearia Estilo é o lugar perfeito para quem busca cortes modernos, barba bem-feita e um ambiente descontraído. Com profissionais experientes, oferecemos um atendimento de qualidade para realçar seu visual.
+                 Agende seu horário e sinta a diferença! ✂🔥</p>    
                 <h2><b>Nossa missão é:<i> proporcionar a você um visual sofisticado e bem cuidado, com cortes e cuidados que refletem seu estilo pessoal.</i></b></h2>
-                <p>Oferecemos profissionais qualificados, sempre atualizados com as últimas tendências do universo masculino, para garantir que seu cabelo e barba estejam sempre no seu melhor. Nosso atendimento é ágil, mantendo um padrão de excelência que assegura a satisfação total dos nossos clientes.</p>
             </div>
         
             <img src="imagens/homenFundopreto.jpg" alt="utensílios" class="utencilios">
@@ -48,12 +70,14 @@
                     <li class="item">Proficionais Qualificados</li>
                     <li class="item">Pontualidade</li>
                     <li class="item">Linpesa</li>
-                </ul><img src="imagens/imagemBarbearia1.jpg" class="imagem_beneficio" >
+                </ul>
             </div>
         </section>
     </main>
     <footer class="rodape">
        <p>&copy; Copyrigt Laminas Divinas Barbearia - 2023</p>
     </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
