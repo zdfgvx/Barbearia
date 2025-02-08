@@ -1,87 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>laminas divinas Podutos</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagens/logoBarbearia .png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-    <body>
-        <header>
-            <div class="caixa">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="produtos.html">produtos</a></li>
-                        <li><a href="contatos.html">Contato</a></li>
-                    </ul>
-                </nav>    
-            </div>
-        </header>
+<body>
+    <header>
+        <nav class="nav-principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+        <div class="botao-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="ativar()" color="#c76d19" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </div>
         
-        <main>
-            <form>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" class="input-padram" required placeholder="Nome Sobrenome">
+        <div class="menu-mobile" id="menu" >
+            <div class="botao-fexar">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="desativar()" color="#c76d19" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+            </div>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" class="input-padram" required placeholder="seuemail@dominio.com">
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" class="input-padram" required placeholder="Nome Sobrenome">
 
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" class="input-padram" required placeholder="(xx) xxxxx-xxx">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padram" required placeholder="seuemail@dominio.com">
 
-                <label for="mensagem">Mensagem</label>
-                <textarea  id="mansagem" cols="50" rows="10" class="input-padram"></textarea>
-                
-                <fieldset>
-                    <legend>Como prefere o nosso contato?</legend>
-                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-                    <label for="radio-Whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-Whatsapp"> whatsapp</label>
-                </fieldset>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padram" required placeholder="(xx) xxxxx-xxx">
 
-                <fieldset>
-                    <legend>Qual horario prefere o nosso atendimanto?</legend>
-                    <select>
-                        <option>Manhã</option>
-                        <option>Tarde</option>
-                        <option>Noite</option>
-                    </select>
-                </fieldset>
-                
-                <label><input type="checkbox" class="checkbox">Gostaria de receber nossas notificações?</label>
-
-
-                <input type="submit" value="Enviar formulario" class="Enviar">
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dias</th>
-                            <th>horarios</th>
-                        </tr>
-                    </thead>
-                    <tboody>
-                        <tr>
-                            <td>seg a sexta</td>
-                            <td>9h ~ 17h</td>
-                        </tr>
-                        <tr>
-                            <td>sabado</td>
-                            <td>9h ~ 19h</td>
-                        </tr>
-                        
-                    </tboody>
-                    
-                </table>
-            </form>
+            <label for="mensagem">Mensagem</label>
+            <textarea  id="mansagem" cols="50" rows="10" class="input-padram"></textarea>
             
-        </main>
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                <label for="radio-Whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-Whatsapp"> whatsapp</label>
+            </fieldset>
 
-        <footer class="rodape">
-            <img src="imagens/logoBarbeariaBranco.png" alt="Logo da Barbearia Branco" class="imagem-rodape">
-           <p>&copy; Copyrigt Laminas Divinas Barbearia - 2023</p>
-        </footer>
-    </body>
+            <fieldset>
+                <legend>Qual horario prefere o nosso atendimanto?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+            
+            <label><input type="checkbox" class="checkbox">Gostaria de receber nossas notificações?</label>
+
+
+            <input type="submit" value="Enviar formulario" class="Enviar">
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>horarios</th>
+                    </tr>
+                </thead>
+                <tboody>
+                    <tr>
+                        <td>seg a sexta</td>
+                        <td>9h ~ 17h</td>
+                    </tr>
+                    <tr>
+                        <td>sabado</td>
+                        <td>9h ~ 19h</td>
+                    </tr> 
+                </tboody> 
+            </table>
+        </form>
+    </main>
+    <footer class="rodape">
+       <p>&copy; Copyrigt Laminas Divinas Barbearia - 2023</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
 </html>

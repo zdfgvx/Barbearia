@@ -55,14 +55,18 @@ nav a:hover{
     border-radius: 50px;
 }
 .imagem_produtos{
-    width: 100%;
+    width: 10%;
+    padding-bottom: 10px;
 }
 .produtos h2{
     font-weight:bold;
     font-size: 22px;
+    padding-bottom: 10px;
 }
 .produtos-descricao{
+    padding-top: 5px ;
     font-size: 18px;
+    
 }
 .produtos-preco{
     font-weight: bold;
@@ -76,10 +80,7 @@ nav a:hover{
 .produtos li:active{
     border-color: #444444;
 }
-.produtos li:hover h2{
-    font-size: 25px;
 
-}
 
 /*css do rodape*/
 
@@ -109,6 +110,7 @@ form label, form legend{
     font-size: 20px;
     margin: 10px ;
     margin-left:25%;
+    color: aliceblue;
 
 }
 .input-padram{
@@ -119,7 +121,7 @@ form label, form legend{
     border-radius: 10px;
     background-color: rgb(241, 241, 241);
     border: none;
-    box-shadow: 3px 3px 4px #a3a3a3 ;
+    box-shadow: 3px 3px 4px #444444 ;
     margin: 0 auto;
 }
 
@@ -139,7 +141,7 @@ fieldset select{
     border-radius: 10px;
     border: none;    
     background-color: orange;
-    box-shadow: 3px 3px 4px #a3a3a3;
+    box-shadow: 3px 3px 4px #444444;
     color: white;
     transition: 1s all;
     cursor: pointer;
@@ -153,17 +155,16 @@ fieldset select{
 table{
     margin: 20px 25px 20px 25% ;
     width: 25%;
-    
 }
 thead{
-    background-color: rgb(88, 88, 88);
-    color: white;
+    color: aliceblue;
     font-weight: bold;
     margin-left: 25%;
 }
 th, td{
+    color: aliceblue;
     padding: 6px 10px;
-    border: solid black 2px;
+    border: solid rgba(255, 176, 39, 0.963) 2px;
 }
 
 /*css da pagina inicioal*/
@@ -252,7 +253,7 @@ th, td{
 
 }
 /* Garante que o menu mobile nunca apareça no desktop */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1019px) {
     .menu-mobile {
         display: none !important;
         opacity: 0 !important;
@@ -289,7 +290,7 @@ th, td{
     .menu-mobile li:hover{
         transform: scale(1.1);
     }
-    /*home*/
+    /*-------home*---------*/
     .titulo-princioal{
         text-align: center;
         font-size: 2em;
@@ -339,4 +340,104 @@ th, td{
     .conteudo-beneficio{
         margin: 0 30vw;
     }
+    /*-----------contatos-------------*/
+
+    form label, form legend{
+        display: block;
+        font-size: 20px;
+        margin: 10px ;
+        margin-left:10vw;
+        color: aliceblue;
+    
+    }
+    fieldset{
+        margin-top: 10px;
+    }
+    fieldset select{
+        margin-left: 10vw;
+    }
+    .input-padram{
+        display: block;
+        width: 80vw;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: rgb(241, 241, 241);
+        border: none;
+        box-shadow: 3px 3px 4px #444444 ;
+        margin: 0 auto;
+    }
+    
+    .checkbox {
+        margin: 25px 0;
+    }
+    
+    .Enviar{
+        width: 70vw;
+        padding: 15px 22px;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 10px;
+        border: none;    
+        background-color: orange;
+        box-shadow: 3px 3px 4px #444444;
+        color: white;
+        transition: 1s all;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 16vw;
+    }
+    .Enviar:hover{
+        background: darkorange;
+        box-shadow: 3px 3px 4px #6e6d6d;
+        transform: scale(1.05) ;
+    }
+    table{
+        margin: 20px 25px 20px 25% ;
+        width: 25%;
+    }
+    thead{
+        color: aliceblue;
+        font-weight: bold;
+        margin-left: 25%;
+    }
+    th, td{
+        color: aliceblue;
+        padding: 6px 10px;
+        border: solid rgba(255, 176, 39, 0.963) 2px;
+    }
+    /*------Produtos-------*/
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas por linha */
+        gap: 0px; /* Espaçamento entre os itens */
+        list-style: none;
+        padding: 0;
+        width: auto;
+        max-width: 700px;
+        margin-left: 10vw;
+    }
+    
+    .produtos li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 18px; /* Reduzindo o padding */
+        background-color: #141414;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.652);
+        width: 80%; /* Reduzindo a largura para 90% do espaço disponível */
+        transition: 0.3s ease-in-out;
+    }
+    
+    .produtos img {
+        width: 80%; /* Ajustando a largura da imagem também */
+        max-width: 270px; /* Reduzindo proporcionalmente */
+        height: auto;
+        border-radius: 5px;
+        padding-bottom: 10px;
+    }
+    
 }
